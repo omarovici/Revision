@@ -16,6 +16,15 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/omarovici/ASP.NET-Revision.git",
+    "accountId": "81ab8f83-dae6-422d-b806-5116c9322322"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Revision/Employee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/FilterList.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,8 +54,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Project.Revision.executor": "Run",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,8 +103,25 @@
       <workItem from="1756820333566" duration="10395000" />
       <workItem from="1756921675582" duration="1705000" />
       <workItem from="1756926830354" duration="9856000" />
-      <workItem from="1757001834045" duration="3696000" />
+      <workItem from="1757001834045" duration="4008000" />
     </task>
+    <task id="LOCAL-00001" summary="Add initial project structure with Employee, Filter, and Sorting functionalities">
+      <option name="closed" value="true" />
+      <created>1757006361431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757006361431</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add initial XML configuration files for project settings and version control">
+      <option name="closed" value="true" />
+      <created>1757006448036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757006448036</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +130,9 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add initial project structure with Employee, Filter, and Sorting functionalities" />
+    <MESSAGE value="Add initial XML configuration files for project settings and version control" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial XML configuration files for project settings and version control" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
