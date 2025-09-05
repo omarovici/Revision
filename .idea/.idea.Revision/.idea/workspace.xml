@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e0e158-5a17-4359-a5eb-7160635cec83" name="Changes" comment="" />
+    <list default="true" id="f8e0e158-5a17-4359-a5eb-7160635cec83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Revision/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Revision/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Revision/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Revision/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.csproj.FileListAbsolute.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,18 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "omarovici"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;omarovici&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/omarovici/ASP.NET-Revision.git",
-    "accountId": "81ab8f83-dae6-422d-b806-5116c9322322"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/omarovici/ASP.NET-Revision.git&quot;,
+    &quot;accountId&quot;: &quot;81ab8f83-dae6-422d-b806-5116c9322322&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Revision/Employee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/FilterList.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Revision/SortingFunctions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/SortingType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/StringFunctions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Revision/TestBuiltInDelegates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1c3f7d5c03bf77051eb8a758fb3549c4e2d4cb3dc6f6d567a94a315044961e/List.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/68b06b8592b1287fd78f3ee68566d6a38d6e2f45b9a9e6ebd4d0e9972f7c29/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a7ea2297612a431fe97724356ecdf466872a4f7949e7e258cf7b9ed136d21c/ValueType.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,6 +60,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="3296EnxtVsajkmgfnJYQM95Svln" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,6 +73,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -110,7 +120,8 @@
       <workItem from="1756820333566" duration="10395000" />
       <workItem from="1756921675582" duration="1705000" />
       <workItem from="1756926830354" duration="9856000" />
-      <workItem from="1757001834045" duration="4008000" />
+      <workItem from="1757001834045" duration="5754000" />
+      <workItem from="1757032453727" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project structure with Employee, Filter, and Sorting functionalities">
       <option name="closed" value="true" />
@@ -128,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757006448036</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Git settings and update task summaries in workspace configuration">
+      <option name="closed" value="true" />
+      <created>1757006468692</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757006468692</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add TestBuiltInDelegates class and update workspace configuration">
+      <option name="closed" value="true" />
+      <created>1757006682273</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1757006682273</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +178,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add initial project structure with Employee, Filter, and Sorting functionalities" />
     <MESSAGE value="Add initial XML configuration files for project settings and version control" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial XML configuration files for project settings and version control" />
+    <MESSAGE value="Add Git settings and update task summaries in workspace configuration" />
+    <MESSAGE value="Add TestBuiltInDelegates class and update workspace configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add TestBuiltInDelegates class and update workspace configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
