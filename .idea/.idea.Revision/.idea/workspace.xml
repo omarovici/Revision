@@ -7,12 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e0e158-5a17-4359-a5eb-7160635cec83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Revision/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Revision/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Revision/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Revision/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Revision/obj/Debug/net9.0/Revision.csproj.FileListAbsolute.txt" afterDir="false" />
-    </list>
+    <list default="true" id="f8e0e158-5a17-4359-a5eb-7160635cec83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Revision/FiltersOfList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/Helper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/Point.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/macbook/Documents/ASP.NET-Revision/Revision/Revision/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/SortingFunctions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/SortingType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Revision/StringFunctions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,24 +63,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Revision.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Revision.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Revision" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -121,7 +117,7 @@
       <workItem from="1756921675582" duration="1705000" />
       <workItem from="1756926830354" duration="9856000" />
       <workItem from="1757001834045" duration="5754000" />
-      <workItem from="1757032453727" duration="965000" />
+      <workItem from="1757032453727" duration="1303000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project structure with Employee, Filter, and Sorting functionalities">
       <option name="closed" value="true" />
@@ -155,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757006682273</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add generated files for project configuration and update workspace settings">
+      <option name="closed" value="true" />
+      <created>1757033498387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757033498387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +184,8 @@
     <MESSAGE value="Add initial XML configuration files for project settings and version control" />
     <MESSAGE value="Add Git settings and update task summaries in workspace configuration" />
     <MESSAGE value="Add TestBuiltInDelegates class and update workspace configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add TestBuiltInDelegates class and update workspace configuration" />
+    <MESSAGE value="Add generated files for project configuration and update workspace settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add generated files for project configuration and update workspace settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

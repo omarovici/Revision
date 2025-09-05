@@ -4,24 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Predicate<int> predicate = TestBuiltInDelegates.CheckPositive;
-        // bool Result = predicate.Invoke(10);
-        // Console.WriteLine($"Is 10 positive? {Result}");
-        //
-        //
-        // Func<int,string> func = TestBuiltInDelegates.Casting;
-        // string str = func.Invoke(123);
-        // Console.WriteLine($"Casting 123 to string: {str}");
+        Predicate<int> predicate = delegate (int x){return x%2==0;};
+        Console.WriteLine(predicate(4)); // True
+        Console.WriteLine(predicate(5)); // False
         
-        // Action action = TestBuiltInDelegates.Print;
-        // action.Invoke();
-        //
-        // Action<string> action1 = TestBuiltInDelegates.Print;
-        // action1.Invoke("Omar");
+        Predicate<int> predicate2 = x => x % 2 != 0;
+        Console.WriteLine(predicate2(4)); // False
+        Console.WriteLine(predicate2(5)); // True
 
-        // Func<int, bool> func = TestBuiltInDelegates.CheckPositive;
-        // bool Result = func.Invoke(10);
-        // Console.WriteLine($"Is 10 positive? {Result}");
 
     }
 }
