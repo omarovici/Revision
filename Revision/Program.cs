@@ -2,16 +2,18 @@
 
 class Program
 {
+    static Action Fun01()
+    {
+        Action action = () => Console.WriteLine("Hello World!");
+        return action;
+    }
     static void Main(string[] args)
     {
-        Predicate<int> predicate = delegate (int x){return x%2==0;};
-        Console.WriteLine(predicate(4)); // True
-        Console.WriteLine(predicate(5)); // False
+        // Fun01().Invoke();
+        // Fun01()();
         
-        Predicate<int> predicate2 = x => x % 2 != 0;
-        Console.WriteLine(predicate2(4)); // False
-        Console.WriteLine(predicate2(5)); // True
-
-
+        
+        // var action = Fun01();
+        // action();
     }
 }
