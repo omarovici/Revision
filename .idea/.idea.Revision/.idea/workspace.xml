@@ -118,6 +118,7 @@
       <workItem from="1756926830354" duration="9856000" />
       <workItem from="1757001834045" duration="5754000" />
       <workItem from="1757032453727" duration="1303000" />
+      <workItem from="1757092087296" duration="1891000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project structure with Employee, Filter, and Sorting functionalities">
       <option name="closed" value="true" />
@@ -159,7 +160,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757033498387</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="predicates">
+      <option name="closed" value="true" />
+      <created>1757092303165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1757092303165</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Action">
+      <option name="closed" value="true" />
+      <created>1757093120193</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1757093120193</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +202,9 @@
     <MESSAGE value="Add Git settings and update task summaries in workspace configuration" />
     <MESSAGE value="Add TestBuiltInDelegates class and update workspace configuration" />
     <MESSAGE value="Add generated files for project configuration and update workspace settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add generated files for project configuration and update workspace settings" />
+    <MESSAGE value="predicates" />
+    <MESSAGE value="Action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Action" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

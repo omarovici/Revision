@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Documents/ASP.NET-Revision/Revision/Revision/Revision.csproj",
+      "projectUniqueName": "/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/Revision.csproj",
       "projectName": "Revision",
-      "projectPath": "/Users/macbook/Documents/ASP.NET-Revision/Revision/Revision/Revision.csproj",
+      "projectPath": "/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/Revision.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Documents/ASP.NET-Revision/Revision/Revision/obj/",
+      "outputPath": "/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/macbook/.nuget/NuGet/NuGet.Config"
