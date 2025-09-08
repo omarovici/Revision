@@ -8,22 +8,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Hashtable noteBook = new Hashtable();
-        Console.WriteLine(noteBook.Count);
-        noteBook.Add("Omar", "0101");
-        noteBook.Add("Ahmed", "0102");
-        // noteBook.Add("Ahmed", "0102"); // Exception
-        noteBook.Add("Sayed", "0103");
-        noteBook["Ali"] = "0104";
-        noteBook["Ali"] = "0105";
-        Console.WriteLine(noteBook["Ali"]);
-        // noteBook.Clear();
-        // noteBook.Remove("Sayed");
-        // Hashtable noteBook2 = (Hashtable)noteBook.Clone();
-        Console.WriteLine(noteBook.Count);
-        foreach (DictionaryEntry item in noteBook)
+        Dictionary<string,long> dict = new Dictionary<string,long>();
+        dict.Add("FIFA", 2024);
+        dict.Add("YouTube", 2005);
+        dict.Add("Instagram", 2010);
+        dict.Add("Snapchat", 2011);
+        dict.Add("TikTok", 2016);
+        dict.Add("Facebook", 2004);
+        foreach (var item in dict)
         {
-            Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
+            Console.WriteLine($"{item.Key} was released in {item.Value}");
         }
     }
 }
