@@ -13,3 +13,18 @@
 /Users/macbook/Documents/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.pdb
 /Users/macbook/Documents/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.genruntimeconfig.cache
 /Users/macbook/Documents/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/ref/Revision.dll
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/bin/Debug/net9.0/Revision
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/bin/Debug/net9.0/Revision.deps.json
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/bin/Debug/net9.0/Revision.runtimeconfig.json
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/bin/Debug/net9.0/Revision.dll
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/bin/Debug/net9.0/Revision.pdb
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.AssemblyInfoInputs.cache
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.AssemblyInfo.cs
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.csproj.CoreCompileInputs.cache
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.sourcelink.json
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.dll
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/refint/Revision.dll
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.pdb
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/Revision.genruntimeconfig.cache
+/Users/macbook/Documents/Study Corner/ASP.NET-Revision/Revision/Revision/obj/Debug/net9.0/ref/Revision.dll
