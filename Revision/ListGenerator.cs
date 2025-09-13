@@ -236,7 +236,7 @@ namespace Revision
 						UnitPrice = 13.0000M, UnitsInStock = 32 }
 			};
 
-			CustomersList = (from e in XDocument.Load("Customers.xml").Root.Elements("customer")
+			CustomersList = (from e in XDocument.Load("/Users/macbook/Downloads/Customers.xml").Root.Elements("customer")
 							 select new Customer()
 							 {
 								 CustomerID = (string)e.Element("id"),
