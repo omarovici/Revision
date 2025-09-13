@@ -5,25 +5,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        // LINQ
+        // LINQ execution ways
+        // 1. Immediate Execution
+        // 2. Deferred Execution
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        var Result = numbers.Where(n => n % 2 == 0).ToList();
+        numbers.AddRange(new List<int> { 11, 12, 13 });
+        foreach (var item in Result)
+        {
+            Console.WriteLine(item);
+        }
         
-        // 1. Fluent Syntax
-        // List<int> Numbers = new List<int>() {9,8,7,6,5,1,2,3,4};
-        // var result = Enumerable.Where(Numbers, x => x % 2 == 0);
-        // var result = Numbers.Where(x=> x % 2 == 0);
-        // foreach (var item in result)
-        // {
-        //     Console.WriteLine(item);
-        // }
-        
-        
-        // 2. Query Syntax
-        // List<int> Numbers = new List<int>() {9,8,7,6,5,1,2,3,4};
-        // var result = from n in Numbers
-        //     where n % 2 != 0
-        //     select n;
-        // foreach (var item in result)
-        //     Console.WriteLine(item);
-
     }
 }
