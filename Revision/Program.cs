@@ -6,11 +6,24 @@ class Program
     static void Main(string[] args)
     {
         // LINQ
-        // List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        // var x = Enumerable.Where(numbers, x => x == 5);
-        // var x = numbers.Any();
-        // var result = Enumerable.Range(1, 100);
-        // foreach (var x in result)
-        //     Console.WriteLine(x);
+        
+        // 1. Fluent Syntax
+        // List<int> Numbers = new List<int>() {9,8,7,6,5,1,2,3,4};
+        // var result = Enumerable.Where(Numbers, x => x % 2 == 0);
+        // var result = Numbers.Where(x=> x % 2 == 0);
+        // foreach (var item in result)
+        // {
+        //     Console.WriteLine(item);
+        // }
+        
+        
+        // 2. Query Syntax
+        // List<int> Numbers = new List<int>() {9,8,7,6,5,1,2,3,4};
+        // var result = from n in Numbers
+        //     where n % 2 != 0
+        //     select n;
+        // foreach (var item in result)
+        //     Console.WriteLine(item);
+
     }
 }
