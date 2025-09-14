@@ -43,5 +43,107 @@ class Program
         //     Console.WriteLine(Fruit);
 
         #endregion
+
+        #region Projection Operators
+
+        // var Result = ProductsList.Select(p => p.ProductName);
+        //
+        // Result = from p in ProductsList
+        //     select p.ProductName;
+        //
+        // var Result2 = ProductsList.Select(p=> new {p.ProductName , p.UnitPrice});
+        //
+        // var Result3 = ProductsList.Where(p => p.UnitsInStock > 0)
+        //     .Select(p => new
+        //     {
+        //         ID = p.ProductID,
+        //         Name = p.ProductName,
+        //         OldPrice = p.UnitPrice,
+        //         NewPrice = p.UnitPrice * 0.8m
+        //     });
+        //
+        // Result3 = from p in ProductsList
+        //     where p.UnitsInStock > 0
+        //     select new
+        //     {
+        //         ID = p.ProductID,
+        //         Name = p.ProductName,
+        //         OldPrice = p.UnitPrice,
+        //         NewPrice = p.UnitPrice * 0.8m
+        //     };
+
+        // var Result = ProductsList.Where(p => p.UnitsInStock > 0)
+        //     .Select((P, I) => new
+        //     {
+        //         Serial = I+1,
+        //         Name = P.ProductName,
+        //     });
+        
+        // List<string> Words = new List<string>()
+        // {
+        //     "One Omar",
+        //     "Two",
+        //     "Three",
+        //     "Four",
+        //     "Five",
+        //     "Six",
+        //     "Seven",
+        //     "Eight",
+        //     "Nine",
+        //     "Ten"
+        // };
+        //
+        // var Result = from word in Words
+        //     from W in word.Split(' ')
+        //     select word;
+        //
+        // Result = Words.SelectMany(w => w.Split(' '));
+
+        // var Result = CustomersList.SelectMany(c => c.Orders);
+        //
+        // Result = from c in CustomersList
+        //     from o in c.Orders
+        //     select o;
+        
+        // var Result = CustomersList.SelectMany(c=> c.Orders , (c , o) => new
+        // {
+        //     c.CustomerName,
+        //     o.OrderID,
+        //     o.Total
+        // });
+        //
+        // Result = from c in CustomersList
+        //     from o in c.Orders
+        //         select new 
+        //         {
+        //             c.CustomerName,
+        //             o.OrderID,
+        //             o.Total
+        //         };
+
+        // var CustomerOrders = CustomersList.SelectMany((C, Index) => C.Orders.Select((O, I) =>
+        //     new
+        //     {
+        //         CustomerIndex = Index + 1,
+        //         OrderIndex = I + 1,
+        //         C.CustomerName,
+        //         O.OrderID,
+        //         O.Total
+        //     }));
+        
+        // List<int> Numbers = new List<int>()
+        // {
+        //     1,2,3,4,5,6,7,8,9,10,11,12
+        // };
+        // char[] Letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k'};
+        // string[] Words = { "First" , "Second", "Third" };
+        //
+        // var Result = Numbers.Zip(Letters,(N,L) => $"Number is {N} and Letter is {L}");
+        //
+        //
+        // foreach (var item in Result)
+        //     Console.WriteLine(item);
+
+        #endregion
     }
 }
