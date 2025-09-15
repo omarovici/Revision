@@ -166,5 +166,54 @@ class Program
         //     Console.WriteLine(item);
 
         #endregion
+
+        #region Element Operators
+
+        // var Result = ProductsList.First();
+        // Result = ProductsList.Last();
+        // Console.WriteLine(Result);
+        
+        // List<Product> products = new List<Product>();
+        // var Result = products.FirstOrDefault();
+        // Result = products.LastOrDefault();
+        // Console.WriteLine(Result);
+        
+        // List<Product> products = new List<Product>();
+        // var Result = products.FirstOrDefault(o=>o.UnitsInStock == 0,new Product());
+        // Console.WriteLine(Result);
+
+        // var Result = ProductsList.ElementAt(1);
+        // Result = ProductsList.ElementAt(new Index(1,true));
+        // Result = ProductsList.ElementAt(^1);
+        // Result = ProductsList.ElementAt(100);
+        // var Result = ProductsList.ElementAtOrDefault(100);
+        // Console.WriteLine(Result);
+
+        // var Result = ProductsList.SingleOrDefault(p=>p.ProductID==1);
+        // Console.WriteLine(Result);
+
+        // var Result = from p in ProductsList
+        //     where p.UnitsInStock == 0
+        //     select new
+        //     {
+        //         p.ProductID,
+        //         p.ProductName
+        //     };
+        //
+        // foreach (var item in Result)
+        //     Console.WriteLine(item);
+        
+        // var Result = (from p in ProductsList
+        //     where p.UnitsInStock == 0
+        //     select new
+        //     {
+        //         p.ProductID,
+        //         p.ProductName
+        //     }).FirstOrDefault();
+        //
+        // Console.WriteLine(Result);
+
+
+        #endregion
     }
 }
