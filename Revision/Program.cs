@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Immutable;
 using Revision.Data;
 
 namespace Revision;
@@ -274,6 +275,31 @@ class Program
         // Result = Words.Aggregate("Hi :",(S1, S2)=> S1 + " " + S2);
         // Result = Words.Aggregate("Hi :",(S1, S2)=> S1 + " " + S2, (TAcc)=> TAcc.Replace(' ','_'));
         // Console.WriteLine(Result);
+
+        #endregion
+
+        #region Casting Operators
+
+        // List<Product> Result = ProductsList.Where(x => x.UnitsInStock == 0).ToList(); // Cast to List
+        // Product[] array = ProductsList.Where(x => x.UnitsInStock == 0).ToArray(); // Cast to Array
+        // Dictionary<long, Product> dict = ProductsList.Where(x => x.UnitsInStock == 0).ToDictionary(p => p.ProductID);
+        // Dictionary<long, string> dict2 = ProductsList.Where(x => x.UnitsInStock == 0).ToDictionary(p=> p.ProductID, p=> p.ProductName);
+        // foreach (var product in dict2)
+        // {
+        //     Console.WriteLine($"Key is {product.Key} and Value is {product.Value}");
+        // }
+
+        // Mutable HashSet
+        // HashSet<Product> set = ProductsList.Where(p => p.UnitsInStock == 0).ToHashSet();
+        // set.Add(new Product(){ProductName = "Test"});
+        
+        // Immutable HashSet
+        // var hasset = ProductsList.Where(p => p.UnitsInStock == 0).ToImmutableHashSet();
+        // hasset.Add(new Product(){ProductName = "Test"});
+        
+        // foreach (Product product in hasset)
+        //     Console.WriteLine(product);
+
 
         #endregion
     }
