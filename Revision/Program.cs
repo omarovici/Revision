@@ -7,6 +7,13 @@ using static Revision.Data.ListGenerator;
 
 class Program
 {
+    public static IEnumerable<int> GetLazyNumbers()
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            yield return i;
+        }
+    }
     static void Main(string[] args)
     {
         #region Filteration Operators
@@ -213,6 +220,60 @@ class Program
         //
         // Console.WriteLine(Result);
 
+
+        #endregion
+
+        #region Aggregate Operators
+
+        // var Result = ProductsList.Count();
+        // Result = ProductsList.Count;
+        // Console.WriteLine(Result);
+
+        // var Numbers = Enumerable.Range(1, 100);
+        // var NumbersList = Numbers.ToList();
+        // Console.WriteLine(NumbersList.Count);
+        // Console.WriteLine(Numbers.Count());
+
+        // var Result = ProductsList.Where(p => p.UnitsInStock > 0).Count();
+        // Result = ProductsList.Count(p => p.UnitsInStock > 0);
+        // Console.WriteLine(Result);
+        //
+        // bool Flag = ProductsList.TryGetNonEnumeratedCount(out Result);
+        // Console.WriteLine(Flag);
+        // Console.WriteLine(Result);
+        
+        // var Numbers = GetLazyNumbers();
+        // Console.WriteLine(Numbers.Count());
+
+        #endregion
+
+        #region Sum and Average
+
+        // var result = ProductsList.Sum(p => p.UnitPrice);
+        // result = ProductsList.Average(p => p.UnitPrice);
+        // Console.WriteLine(result);
+
+        #endregion
+
+        #region Maximum and Minimum
+
+        // var Result = ProductsList.Max(new ProductUnitInStockComparer());
+        // Result = ProductsList.Min();
+        // Console.WriteLine(Result);
+
+        // var Result = ProductsList.MinBy(p => p.ProductName);
+        // Result = ProductsList.MaxBy(p => p.ProductName);
+        // Console.WriteLine(Result);
+
+        #endregion
+
+        #region Aggregate
+
+        // string[] Words = { "One", "Two", "Three", "Four", "Five" };
+        // var Result = Words.Aggregate((S1, S2) => S1 + " " + S2);
+        // Result = Words.Aggregate("Hi :",(S1, S2)=> S1 + " " + S2);
+        // Result = Words.Aggregate("Hi :",(S1, S2)=> S1 + " " + S2, (TAcc)=> TAcc.Replace(' ','_'));
+        // Console.WriteLine(Result);
 
         #endregion
     }
