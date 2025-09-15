@@ -1,6 +1,6 @@
 namespace Revision.Data;
 
-public class Customer
+public class Customer : IComparable<Customer>
 {
     public string CustomerID { get; set; }
     public string CustomerName { get; set; }
@@ -22,6 +22,12 @@ public class Customer
     {
 
     }
+
+    public int CompareTo(Customer? other)
+    {
+        return this.CustomerName.CompareTo(other?.CustomerName);
+    }
+
     public override string ToString()
         => $"{CustomerID}, {CustomerName}, {Address}, {City}, {Region}, {PostalCode}, {Country}, {Phone}, {Fax}";
 }

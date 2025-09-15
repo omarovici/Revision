@@ -145,5 +145,26 @@ class Program
         //     Console.WriteLine(item);
 
         #endregion
+
+        #region Sort Operators
+
+        // var Result = CustomersList.OrderBy(c=> c.CustomerName);
+        // foreach (var item in Result)
+        //     Console.WriteLine(item);
+
+        // var Result = ProductsList.OrderBy(p => p.UnitsInStock).ThenByDescending(p=>p.UnitPrice);
+        //
+        // Result = from p in ProductsList
+        //     orderby p.UnitsInStock, p.UnitPrice descending
+        //     select p;
+        //
+
+
+        // var Result = ProductsList.Where(P => P.ProductName.Length < 10).Select(p => p.ProductName).OrderBy(n=>n.Length);
+        //
+        // foreach (var item in Result)
+        //     Console.WriteLine(item);
+
+        #endregion
     }
 }
