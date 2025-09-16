@@ -381,7 +381,7 @@ class Program
         //         UnitPrice = 19.0000M, UnitsInStock = 17
         //     },
         // };
-        
+
         // var Result = Products1.Union(Products2);
         // Result = Products1.Union(Products2, new ProductIdEqualityComparer());
         // var Result = Products1.UnionBy(Products2, p => p.ProductID);
@@ -439,11 +439,10 @@ class Program
         // };
         //
         // Console.WriteLine(ProductsList.Contains<Product>(product, new ProductIdEqualityComparer()));
-        
+
         // var Numbers1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         // var Numbers2 = new List<int>() { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
         // Console.WriteLine(Numbers1.SequenceEqual(Numbers2)); // False
-
 
         #endregion
 
@@ -474,6 +473,39 @@ class Program
         //         
         // foreach (var p in Result2)
         //     Console.WriteLine(p);
+
+        #endregion
+
+        #region Grouping Operators
+
+        // var Result =
+        //     from p in ProductsList
+        //     where p.UnitsInStock > 0
+        //     group p by p.Category
+        //     into ProductGroup
+        //     where ProductGroup.Count() > 10
+        //     select ProductGroup;
+
+        // foreach (var group in Result)
+        // {
+        //     Console.WriteLine($"Category is {group.Key} and Count is {group.Count()}");
+        //     foreach (var item in group)
+        //         Console.WriteLine($"\t {item}");
+        // }
+
+        // foreach (var group in Result)
+        // {
+        //     Console.WriteLine($"Category is {group.Key} and Count is {group.Count()}");
+        // }
+
+        // var Result = ProductsList.Where(p => p.UnitsInStock > 0).GroupBy(p => p.Category,
+        //     (k, p) => new { Category = k, CountOfProducts = p.Count() , StringComparer.OrdinalIgnoreCase });
+
+        // var Result = ProductsList.Where(p => p.UnitsInStock > 0).GroupBy(p => p.Category, p => p.ProductName,
+        //     (k, p) => new { Category = k, Count = p.Count() },StringComparer.OrdinalIgnoreCase);
+        //
+        // foreach (var item in Result)
+        //     Console.WriteLine($"Category is {item.Category} and Count is {item.Count}");
 
         #endregion
     }

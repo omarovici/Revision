@@ -28,7 +28,7 @@ public class Product : IComparable<Product>
 	}
 
 	public override string ToString()
-		=> $"ProductID:{ProductID},ProductName:{ProductName},Category{Category},UnitPrice:{UnitPrice},UnitsInStock:{UnitsInStock}";
+		=> $"ProductID:{ProductID},ProductName:{ProductName},Category: {Category},UnitPrice:{UnitPrice},UnitsInStock:{UnitsInStock}";
 
 }
 

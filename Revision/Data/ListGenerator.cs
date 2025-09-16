@@ -44,7 +44,7 @@ namespace Revision.Data
 
                 new Product()
                 {
-                    ProductID = 1, ProductName = "Chai", Category = "Beverages",
+                    ProductID = 1, ProductName = "Chai", Category = "beverages",
                     UnitPrice = 18.00M, UnitsInStock = 100
                 },
                 new Product
