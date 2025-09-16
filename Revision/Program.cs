@@ -397,5 +397,54 @@ class Program
         //     Console.WriteLine(item);
 
         #endregion
+
+        #region Quantifier Operators - Return Boolean
+
+        // Console.WriteLine(ProductsList.Any());
+        // Console.WriteLine(ProductsList.Any(p=>p.UnitsInStock==0));
+        // Console.WriteLine(ProductsList.All(p=>p.UnitsInStock==0));
+        // var Products1 = new List<Product>()
+        // {
+        //     new Product
+        //     {
+        //         ProductID = 1, ProductName = "Chai", Category = "Beverages",
+        //         UnitPrice = 18.00M, UnitsInStock = 100
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 2, ProductName = "Cha2ng", Category = "Beverages",
+        //         UnitPrice = 19.0000M, UnitsInStock = 17
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 3, ProductName = "Aniseed Syrup", Category = "Condiments",
+        //         UnitPrice = 10.0000M, UnitsInStock = 13
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 4, ProductName = "Chef Anton's Cajun Seasoning", Category = "Condiments",
+        //         UnitPrice = 22.0000M, UnitsInStock = 53
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 5, ProductName = "Chef Anton's Gumbo Mix", Category = "Condiments",
+        //         UnitPrice = 21.3500M, UnitsInStock = 0
+        //     }
+        // };
+        //
+        // Product product = new Product
+        // {
+        //     ProductID = 1, ProductName = "Ch1ai", Category = "Beverages",
+        //     UnitPrice = 18.00M, UnitsInStock = 100
+        // };
+        //
+        // Console.WriteLine(ProductsList.Contains<Product>(product, new ProductIdEqualityComparer()));
+        
+        // var Numbers1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        // var Numbers2 = new List<int>() { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+        // Console.WriteLine(Numbers1.SequenceEqual(Numbers2)); // False
+
+
+        #endregion
     }
 }
