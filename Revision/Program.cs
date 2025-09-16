@@ -15,6 +15,7 @@ class Program
             yield return i;
         }
     }
+
     static void Main(string[] args)
     {
         #region Filteration Operators
@@ -31,7 +32,7 @@ class Program
 
 
         // var Result = ProductsList.OfType<Product02>().Where(p => p.UnitsInStock > 0);
-        
+
         // foreach (var item in Result)
         //     Console.WriteLine(item);
 
@@ -86,7 +87,7 @@ class Program
         //         Serial = I+1,
         //         Name = P.ProductName,
         //     });
-        
+
         // List<string> Words = new List<string>()
         // {
         //     "One Omar",
@@ -112,7 +113,7 @@ class Program
         // Result = from c in CustomersList
         //     from o in c.Orders
         //     select o;
-        
+
         // var Result = CustomersList.SelectMany(c=> c.Orders , (c , o) => new
         // {
         //     c.CustomerName,
@@ -138,7 +139,7 @@ class Program
         //         O.OrderID,
         //         O.Total
         //     }));
-        
+
         // List<int> Numbers = new List<int>()
         // {
         //     1,2,3,4,5,6,7,8,9,10,11,12
@@ -180,12 +181,12 @@ class Program
         // var Result = ProductsList.First();
         // Result = ProductsList.Last();
         // Console.WriteLine(Result);
-        
+
         // List<Product> products = new List<Product>();
         // var Result = products.FirstOrDefault();
         // Result = products.LastOrDefault();
         // Console.WriteLine(Result);
-        
+
         // List<Product> products = new List<Product>();
         // var Result = products.FirstOrDefault(o=>o.UnitsInStock == 0,new Product());
         // Console.WriteLine(Result);
@@ -210,7 +211,7 @@ class Program
         //
         // foreach (var item in Result)
         //     Console.WriteLine(item);
-        
+
         // var Result = (from p in ProductsList
         //     where p.UnitsInStock == 0
         //     select new
@@ -220,7 +221,6 @@ class Program
         //     }).FirstOrDefault();
         //
         // Console.WriteLine(Result);
-
 
         #endregion
 
@@ -242,7 +242,7 @@ class Program
         // bool Flag = ProductsList.TryGetNonEnumeratedCount(out Result);
         // Console.WriteLine(Flag);
         // Console.WriteLine(Result);
-        
+
         // var Numbers = GetLazyNumbers();
         // Console.WriteLine(Numbers.Count());
 
@@ -292,14 +292,13 @@ class Program
         // Mutable HashSet
         // HashSet<Product> set = ProductsList.Where(p => p.UnitsInStock == 0).ToHashSet();
         // set.Add(new Product(){ProductName = "Test"});
-        
+
         // Immutable HashSet
         // var hasset = ProductsList.Where(p => p.UnitsInStock == 0).ToImmutableHashSet();
         // hasset.Add(new Product(){ProductName = "Test"});
-        
+
         // foreach (Product product in hasset)
         //     Console.WriteLine(product);
-
 
         #endregion
 
@@ -313,6 +312,89 @@ class Program
         //
         // foreach (var result in Result)
         //     Console.WriteLine(result);
+
+        #endregion
+
+        #region Set Operators [Union Family]
+
+        // var Numbers1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        // var Numbers2 = new List<int>() { 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+        // var Result = Numbers1.Union(Numbers2);
+        // Result = Numbers1.Concat(Numbers2);
+        // Result = Numbers1.Concat(Numbers2).Distinct();
+        // Result = Numbers1.Intersect(Numbers2);
+        // Result = Numbers1.Except(Numbers2);
+        //
+        // foreach (var item in Result)
+        //     Console.WriteLine(item);
+
+
+        // var Products1 = new List<Product>()
+        // {
+        //     new Product
+        //     {
+        //         ProductID = 1, ProductName = "Chai", Category = "Beverages",
+        //         UnitPrice = 18.00M, UnitsInStock = 100
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 2, ProductName = "Cha2ng", Category = "Beverages",
+        //         UnitPrice = 19.0000M, UnitsInStock = 17
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 2, ProductName = "Chang", Category = "Beverages",
+        //         UnitPrice = 19.0000M, UnitsInStock = 17
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 3, ProductName = "Aniseed Syrup", Category = "Condiments",
+        //         UnitPrice = 10.0000M, UnitsInStock = 13
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 4, ProductName = "Chef Anton's Cajun Seasoning", Category = "Condiments",
+        //         UnitPrice = 22.0000M, UnitsInStock = 53
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 5, ProductName = "Chef Anton's Gumbo Mix", Category = "Condiments",
+        //         UnitPrice = 21.3500M, UnitsInStock = 0
+        //     }
+        // };
+        //
+        // var Products2 = new List<Product>()
+        // {
+        //     new Product
+        //     {
+        //         ProductID = 1, ProductName = "Chai", Category = "Beverages",
+        //         UnitPrice = 18.00M, UnitsInStock = 100
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 4, ProductName = "Chef Anton's Cajun Seasoning", Category = "Condiments",
+        //         UnitPrice = 22.0000M, UnitsInStock = 53
+        //     },
+        //     new Product
+        //     {
+        //         ProductID = 2, ProductName = "Cha1ng", Category = "Beverages",
+        //         UnitPrice = 19.0000M, UnitsInStock = 17
+        //     },
+        // };
+        
+        // var Result = Products1.Union(Products2);
+        // Result = Products1.Union(Products2, new ProductIdEqualityComparer());
+        // var Result = Products1.UnionBy(Products2, p => p.ProductID);
+        // Result = Products1.Intersect(Products2);
+        // Result = Products1.Intersect(Products2, new ProductIdEqualityComparer());
+        // Result = Products1.IntersectBy(Products2.Select(p => p.ProductID), p => p.ProductID);
+        // var Result = Products1.ExceptBy(Products2.Select(p => p.ProductID), p => p.ProductID);
+        // var Result = Products1.Distinct();
+        // Result = Products1.Distinct(new ProductIdEqualityComparer());
+        // var Result = Products1.DistinctBy(p => p.ProductID);
+
+        // foreach (var item in Result)
+        //     Console.WriteLine(item);
 
         #endregion
     }
