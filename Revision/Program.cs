@@ -446,5 +446,35 @@ class Program
 
 
         #endregion
+
+        #region Let & Into Keywords
+
+        // var Result = from p in ProductsList
+        //     where p.UnitPrice * 0.8m < 10
+        //     select new
+        //     {
+        //         p.ProductName,
+        //         PriceAfterDiscount = p.UnitPrice * 0.8m
+        //     };
+        //
+        // Result = from p in ProductsList
+        //     let PriceAfterDiscount = p.UnitPrice * 0.8m
+        //     where PriceAfterDiscount < 10
+        //     select new
+        //     {
+        //         p.ProductName,
+        //         PriceAfterDiscount
+        //     };
+        //
+        // var Result2 = from p in ProductsList
+        //     select p.UnitPrice * 0.9m
+        //         into DiscountedPrices
+        //         where DiscountedPrices < 10
+        //         select DiscountedPrices;
+        //         
+        // foreach (var p in Result2)
+        //     Console.WriteLine(p);
+
+        #endregion
     }
 }
