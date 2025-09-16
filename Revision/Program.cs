@@ -508,5 +508,33 @@ class Program
         //     Console.WriteLine($"Category is {item.Category} and Count is {item.Count}");
 
         #endregion
+
+        #region Partitioning Operators
+
+        // var Result = ProductsList.Where(p => p.UnitsInStock > 0).Take(5);
+        // Result = ProductsList.Where(p => p.UnitsInStock > 0).TakeLast(5);
+        // Result = ProductsList.Where(p => p.UnitsInStock > 0).Skip(5).Take(5);
+        // Result = ProductsList.Where(p => p.UnitsInStock > 0).SkipLast(5);
+        
+        // int[] RandomNumbers = { 1, 3, 5, 7, 9, 2, 4, 6, 8, 10 };
+        // var Result = RandomNumbers.TakeWhile((num , i) => num > i);
+        // var Result = RandomNumbers.SkipWhile(n=> n % 2 != 0);
+        // var Result = RandomNumbers.Chunk(3);
+        //
+        // foreach (var p in Result)
+        // {
+        //     if(p is int[])
+        //         Console.WriteLine(string.Join(" , " , p));
+        //     Console.WriteLine();
+        // }
+
+        // var Result = ProductsList.Chunk(10);
+        //
+        // foreach (var chunk in Result)
+        // {
+        //     Console.WriteLine(chunk.Count());
+        // }
+
+        #endregion
     }
 }
