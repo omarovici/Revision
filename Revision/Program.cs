@@ -302,5 +302,18 @@ class Program
 
 
         #endregion
+
+        #region Generate Operators [Valid Only With Method Syntax]
+
+        // var Result = Enumerable.Range(1, 100);
+        // Result = Enumerable.Repeat(2, 100);
+        // var Products = Enumerable.Repeat(new Product(){Category = "Meat"}, 100);
+        // var Result = Enumerable.Empty<Product>().ToList();
+        // Product[] Arr = new Product[0];
+        //
+        // foreach (var result in Result)
+        //     Console.WriteLine(result);
+
+        #endregion
     }
 }
