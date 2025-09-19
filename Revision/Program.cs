@@ -10,7 +10,5 @@ class Program
     static void Main(string[] args)
     {
         using CompanyDbContext dbContext = new CompanyDbContext();
-        var Employees = dbContext.Employees.Where(e=>e.Name == "Omar").FirstOrDefault();
-        Console.WriteLine(Employees);
     }
 }
