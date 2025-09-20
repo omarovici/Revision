@@ -50,9 +50,12 @@ namespace Revision.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmpName")
-                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar")
+                        .HasColumnName("EmployeeName");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
