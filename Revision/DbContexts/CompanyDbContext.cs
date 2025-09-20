@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Revision.Data;
+using Revision.ModelConfigurations;
 
 namespace Revision.DbContexts;
 
@@ -15,27 +16,7 @@ public class CompanyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Employee>().HasKey(e => e.EmpId);
-        
-        modelBuilder.Entity<Employee>().Property(e => e.EmpName)
-            .HasColumnName("EmployeeName")
-            .HasColumnType("varchar")
-            .HasMaxLength(50)
-            .IsRequired();
-        
-        // modelBuilder.Entity<Employee>( d=>
-        // {
-        //     d.HasKey(e => e.EmpId);
-        //     d.Property(e => e.EmpName)
-        //         .HasColumnName("EmployeeName")
-        //         .HasColumnType("varchar")
-        //         .HasMaxLength(50)
-        //         .IsRequired();
-        //     d.Property(e => e.Salary)
-        //         .HasColumnName("EmployeeSalary")
-        //         .HasColumnType("decimal(10,2)");
-        //     d.HasCheckConstraint("CK_Employee_Age", "Age >= 18 AND Age <= 65");
-        // });
+        modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfigurations());
     }
 
     public DbSet<Employee>? Employees { get; set; }
