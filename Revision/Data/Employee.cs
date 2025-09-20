@@ -6,13 +6,13 @@ namespace Revision.Data;
 [Table("EmpTable")]
 public class Employee
 {
-    [Key]
+    // [Key]
     public int EmpId { get; set; }
-    [Required]
+    // [Required]
     // [Column("EmployeeName", TypeName = "varchar")]
-    // [MaxLength(50,ErrorMessage = "Name cannot exceed 50 characters")]
-    // [MinLength(3,ErrorMessage = "Name should have at least 3 characters")]
-    [StringLength(50,MinimumLength = 3)]
+    [MaxLength(50,ErrorMessage = "Name cannot exceed 50 characters")]
+    [MinLength(3,ErrorMessage = "Name should have at least 3 characters")]
+    // [StringLength(50,MinimumLength = 3)]
     public string EmpName { get; set; }
     
     [Column("EmployeeSalary", TypeName = "decimal(10,2)")]
