@@ -23,7 +23,19 @@ public class CompanyDbContext : DbContext
             .HasMaxLength(50)
             .IsRequired();
         
-        
+        // modelBuilder.Entity<Employee>( d=>
+        // {
+        //     d.HasKey(e => e.EmpId);
+        //     d.Property(e => e.EmpName)
+        //         .HasColumnName("EmployeeName")
+        //         .HasColumnType("varchar")
+        //         .HasMaxLength(50)
+        //         .IsRequired();
+        //     d.Property(e => e.Salary)
+        //         .HasColumnName("EmployeeSalary")
+        //         .HasColumnType("decimal(10,2)");
+        //     d.HasCheckConstraint("CK_Employee_Age", "Age >= 18 AND Age <= 65");
+        // });
     }
 
     public DbSet<Employee>? Employees { get; set; }
