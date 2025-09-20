@@ -36,4 +36,7 @@ public class Employee
 
     [NotMapped]
     public int MyProperty { get; set; }
+    
+    public Department? ManageDepartment { get; set; }
+    public Address EmployeeAddress { get; set; }
 }

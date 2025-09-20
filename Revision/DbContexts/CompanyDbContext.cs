@@ -19,9 +19,9 @@ public class CompanyDbContext : DbContext
     {
         // modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfigurations());
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); // automatically apply all configurations in the assembly
+        
+        
     }
 
     public DbSet<Employee>? Employees { get; set; }
-    public DbSet<Department>? Departments { get; set; }
-    public DbSet<Product>? Products { get; set; }
 }
