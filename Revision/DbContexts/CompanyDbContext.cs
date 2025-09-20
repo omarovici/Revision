@@ -1,3 +1,4 @@
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Revision.Data;
 using Revision.ModelConfigurations;
@@ -16,7 +17,8 @@ public class CompanyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfigurations());
+        // modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfigurations());
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); // automatically apply all configurations in the assembly
     }
 
     public DbSet<Employee>? Employees { get; set; }
